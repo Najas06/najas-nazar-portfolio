@@ -3,12 +3,15 @@ import { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
-import Developer from '@/components/Developer.jsx';
+// import Developer from '@/components/Developer.jsx';
 
 import { workExperiences } from '@/constants/index.js';
 import CanvasLoader from '@/components/CanvasLoader.jsx';
 import Image from 'next/image.js';
-
+import dynamic from 'next/dynamic';
+// const Developer = dynamic(() => import("@/components/Developer.jsx"), {
+//   ssr: false,
+// });
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');
 
@@ -26,7 +29,7 @@ const WorkExperience = () => {
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
 
               <Suspense fallback={<CanvasLoader />}>
-                <Developer position-y={-3} scale={3} animationName={animationName} />
+                {/* <Developer position-y={-3} scale={3} animationName={animationName} /> */}
               </Suspense>
             </Canvas>
           </div>
