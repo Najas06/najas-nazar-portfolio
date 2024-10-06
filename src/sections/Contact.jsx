@@ -47,7 +47,7 @@ const Contact = () => {
         <Image width={1080} height={1020}
           src="/assets/terminal.png"
           alt="terminal background"
-          className="absolute inset-0 min-h-screen"
+          className="absolute inset-0 min-h-screen w-full"
         />
         <div className="contact-container">
           <h3 className="head-text">Let&apos;s get in touch</h3>
