@@ -39,10 +39,11 @@ const Contact = () => {
         console.log(error);
         alert("Something went wrong. Please try again.");
         
-    }
-  };
-  return (
-    <section className="c-space my-20" id="contact">
+      }
+    };
+    return (
+      <section className="c-space my-20" id="contact">
+      <h3 className="head-text">Contact Me</h3>
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <Image width={1080} height={1020}
           src="/assets/terminal.png"
@@ -107,7 +108,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <h3 className="head-text">Contact Me</h3>
     </section>
   );
 };
