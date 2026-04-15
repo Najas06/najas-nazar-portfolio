@@ -22,7 +22,7 @@ const Footer = () => {
                 <Link href={'https://www.instagram.com/codewithnajas/?igsh=aHZ5dHkwMDY2cjRt'} className="flex items-center justify-center" target="_blank"><Image width={1080} height={1020} src="/assets/instagram.svg" alt="instagram" className='w-1/2 h-1/2'/></Link>
             </div>
         </div>
-        <p className='text-white-500'>All Rights Reserved. 2024 </p>
+        <p className='text-white-500'>All Rights Reserved. {new Date().getFullYear()} </p>
     </section>
   )
 }
